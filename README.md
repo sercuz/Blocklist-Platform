@@ -53,35 +53,53 @@ For questions, issues, or concerns, please contact: **alwaleedabosaq@gmail.com**
 - **Authentication**: JWT tokens
 - **Deployment**: Docker containers
 
-## Getting Started
+## 🚀 Quick Start
+
+For detailed setup instructions, see **[PRODUCTION_SETUP.md](PRODUCTION_SETUP.md)** for a comprehensive step-by-step guide.
 
 ### Prerequisites
 
-- Docker and Docker Compose
+- Docker and Docker Compose installed
+- Git (for cloning the repository)
 
-### Running the Application
+### Basic Setup
 
-1. Clone this repository
-2. Navigate to the project directory
-3. Run the application with Docker Compose:
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/sercuz/blocklist-platform.git
+   cd blocklist-platform
+   ```
 
-```bash
-docker-compose up --build
-```
+2. **Start the application**
+   ```bash
+   docker-compose up -d --build
+   ```
 
-4. Access the application:
+3. **Set up the database**
+   ```bash
+   docker-compose exec backend python manage.py migrate
+   docker-compose exec backend python manage.py createsuperuser
+   ```
+
+4. **Access the application**
    - Frontend: http://localhost:3000
-   - Backend API: http://localhost:8000/api
+   - Backend API: http://localhost:8000
+   - API Documentation: http://localhost:8000/swagger/
 
-### Default User
+### For Production Deployment
 
-When running the application for the first time, you'll need to create a superuser to log in:
+**⚠️ Important**: Before deploying to production, please review:
 
-```bash
-docker-compose exec backend python manage.py createsuperuser
-```
+- **[PRODUCTION_SETUP.md](PRODUCTION_SETUP.md)** - Complete production setup guide
+- **[DEPLOYMENT_CHECKLIST.md](DEPLOYMENT_CHECKLIST.md)** - Security and deployment checklist
+- **[TERMS_OF_SERVICE.md](TERMS_OF_SERVICE.md)** - Legal terms and acceptable use policy
 
-Follow the prompts to create a username and password.
+Key production considerations:
+- Change the `SECRET_KEY` environment variable
+- Set `DEBUG=0` in production
+- Configure `ALLOWED_HOSTS` properly
+- Set up SSL/TLS certificates
+- Configure regular backups of the `data/` directory
 
 ## API Endpoints
 
