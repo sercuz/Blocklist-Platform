@@ -1,4 +1,4 @@
-# Blocklist Platform
+# Dynamic Blocklist Platform
 
 [![Development Status](https://img.shields.io/badge/status-under%20development-yellow)](https://github.com/sercuz/blocklist-platform)
 [![License](https://img.shields.io/badge/license-BSD%204--Clause-blue.svg)](LICENSE)
