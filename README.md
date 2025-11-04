@@ -1,6 +1,25 @@
 # Blocklist Platform
 
+[![Development Status](https://img.shields.io/badge/status-under%20development-yellow)](https://github.com/sercuz/blocklist-platform)
+[![License](https://img.shields.io/badge/license-BSD%204--Clause-blue.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
+[![Django](https://img.shields.io/badge/django-4.2+-green.svg)](https://www.djangoproject.com/)
+[![React](https://img.shields.io/badge/react-18+-61dafb.svg)](https://reactjs.org/)
+
 A lightweight web portal that allows analysts to quickly add or remove indicators of compromise (IOCs) such as IP addresses, domains, and URLs, while maintaining an auditable record of every action.
+
+## 🚧 Development Status
+
+**This project is currently under active development.** While the core functionality is working and stable, new features are being added and improvements are ongoing. 
+
+- ✅ Core blocking/unblocking functionality
+- ✅ JWT authentication and API keys
+- ✅ Audit logging
+- ✅ Docker deployment
+- 🔄 Additional features and enhancements in progress
+- 🔄 Extended testing and optimization
+
+Feel free to use it, test it, and provide feedback! Contributions and issue reports are welcome.
 
 **⚠️ IMPORTANT NOTICE**: This platform is intended solely for legitimate cybersecurity and network security purposes. Misuse of this software for illegal activities, unauthorized access, censorship, or any prohibited purposes as outlined in the Terms of Service is strictly forbidden and may result in legal action.
 
