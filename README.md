@@ -35,15 +35,26 @@ By using this software, you agree to the [Terms of Service](TERMS_OF_SERVICE.md)
 
 For questions, issues, or concerns, please contact: **alwaleedabosaq@gmail.com**
 
-## Features
+## 🔑 Key Features
 
-- Single-page application with a clean, modern UI
-- Block/unblock IP addresses, domains, and URLs
-- Searchable blocklist table with inline unblock functionality
-- Audit logs for all actions
-- JWT-based authentication
-- RESTful API for future automation
-- Flat-file storage for tamper-evident audit trail
+- 🛡️ **Block/unblock** IP addresses, domains, and URLs  
+- 📊 **Searchable blocklist table** with real-time updates  
+- 📝 **Complete audit logging** of all actions  
+- 🔐 **JWT authentication** + API key support  
+- 🌍 **GMT+3 timezone** support  
+- ✨ **Input sanitization and validation**  
+- 🔄 **Duplicate detection** and handling  
+- 📡 **RESTful API** with Swagger documentation  
+- 🐳 **Docker-based deployment**  
+- 📋 **Flat-file storage** for tamper-evident audit trails  
+
+## 💼 Use Cases
+
+- Security Operations Centers (**SOC**)  
+- Incident Response Teams  
+- Network Security Management  
+- Threat Intelligence Operations  
+- Cybersecurity Research  
 
 ## Tech Stack
 
@@ -52,6 +63,8 @@ For questions, issues, or concerns, please contact: **alwaleedabosaq@gmail.com**
 - **Storage**: Flat files (can be swapped for DB later)
 - **Authentication**: JWT tokens
 - **Deployment**: Docker containers
+
+---
 
 ## 🚀 Quick Start
 
