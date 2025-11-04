@@ -59,9 +59,10 @@ media
 .DS_Store
 Thumbs.db
 
-# Data directory (contains blocklists and logs)
-data/
-*.txt
+# Data directory - keep the structure and placeholder files
+# Users will populate these files when they use the application
+# Note: In production, you may want to exclude data/*.txt to prevent
+# accidentally committing sensitive IOC data
 
 # Docker volumes
 volumes/
