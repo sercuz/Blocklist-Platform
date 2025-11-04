@@ -18,6 +18,6 @@ Follow the prompts to create your admin account.
 
 ## Database Location
 
-The database file will be created at: ackend/db.sqlite3
+The database file will be created at: Backend/db.sqlite3
 
 This file is excluded from git (see .gitignore) to prevent accidentally committing sensitive user data.
