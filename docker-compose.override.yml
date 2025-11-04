@@ -1,0 +1,14 @@
+version: '3.8'
+
+# This file contains overrides for local development with the Docker extension
+services:
+  backend:
+    # Add any development-specific overrides here
+    environment:
+      - DEBUG=1
+      
+  frontend:
+    # Add any development-specific overrides here
+    environment:
+      - REACT_APP_API_URL=http://localhost:8000/api
+      - CHOKIDAR_USEPOLLING=true  # Enable hot reloading
